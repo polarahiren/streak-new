@@ -1,0 +1,104 @@
+
+// global css
+* {
+  box-sizing: border-box;
+}
+
+a,
+a:focus {
+  outline: none;
+}
+p,h1,h2,h3,h4{ 
+  margin: 0px;
+}
+
+ul {
+  padding-left: 0px;
+  margin: 0px;
+}
+
+ul li {
+  list-style: none;
+}
+
+a,
+a:hover {
+  color: $white;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.bg-black {
+  background-color: $black;
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-black {
+  color: $black;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.relative {
+  position: relative;
+}
+
+// END global css
+
+
+body {
+  font-family: 'Graphik', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+header {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  width: 90%;
+  z-index: 99;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-title {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1.35;
+  letter-spacing: -0.55px;
+  margin: 0;
+  @media screen and (max-width: 767px){
+    font-size: 32px;
+  }
+}
+
+.text-base{
+  font-size: 13px;
+  letter-spacing: 0.55px;
+  line-height: 24px;
+  color: #D4D2CF;
+}
