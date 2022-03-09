@@ -457,8 +457,13 @@ a.hero-cta {
   z-index: 40;
 }
 
+.section-five {
+  z-index: 50;
+}
+
 .section-two .section-wall-image,
-.section-four .section-wall-image {
+.section-four .section-wall-image,
+.section-five .section-wall-image {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -561,6 +566,19 @@ a.hero-cta {
   color: #ffffff;
 }
 
+@media screen and (max-width: 767px) {
+  .section-three .bg-cloud:before {
+    background-position: center;
+  }
+}
+
 .section-four .bg-cloud:before {
   opacity: 0.6;
+}
+
+.fans-page .section-two .bg-left-cloud:before {
+  background-image: url("../images/left-cloud-full.png");
+}
+.fans-page .section-four .section-wall-image {
+  width: 100%;
 }

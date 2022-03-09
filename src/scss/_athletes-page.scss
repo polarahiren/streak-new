@@ -147,10 +147,14 @@ a.hero-cta {
 .section-four{
   z-index: 40;
 }
+.section-five{
+  z-index: 50;
+}
 
 
 .section-two,
-.section-four {
+.section-four,
+.section-five {
   .section-wall-image {
     height: 100%;
     object-fit: cover;
@@ -244,6 +248,13 @@ a.hero-cta {
   } 
 }
 
+.section-three{
+  @media screen and (max-width: 767px) {
+    .bg-cloud:before{
+      background-position: center;
+    }
+  }
+}
 .section-four {
     .bg-cloud:before{
       opacity: 0.6;
