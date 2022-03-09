@@ -94,15 +94,14 @@
         padding-left: 35px;
       }
     }
-
-    a.hero-cta {
-      margin-top: 32px;
-      text-transform: capitalize;
-      display: inline-block;
-    }
   }
 }
 
+a.hero-cta {
+  margin-top: 32px;
+  text-transform: capitalize;
+  display: inline-block;
+}
 
 
 .bg-left-cloud {
@@ -133,6 +132,10 @@
   height: 100vh;
   top: 0px;
   left: 0px;
+
+  .text-title{
+    text-transform: capitalize;
+  }
 }
 
 .section-two {
@@ -141,7 +144,6 @@
 .section-three{
   z-index: 20;
 }
-
 .section-four{
   z-index: 40;
 }
@@ -162,27 +164,45 @@
 .theme-slide-content-box {
   position: absolute;
   z-index: 9;
-  bottom: 20%;
+  bottom: 15%;
   width: 80%;
   left: 0;
   right: 0;
   margin: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   min-height: 35%;
+  padding-left: 30px;
+
+  @media screen and (min-width: 768px) {
+    bottom: 20%;
+    flex-direction: row;
+    padding-left: 0px;
+  }
 
   .theme-slide-title {
-    min-width: 300px;
     flex-shrink: 0;
-    text-align: right;
-
+    @media screen and (min-width: 768px) {
+      text-align: right;
+      min-width: 300px;
+    }
     @media screen and (min-width: 990px) {
         padding-right: 30px;
+    }
+    @media screen and (max-width: 767px) {
+      .text-title{
+        margin-bottom: 40px;
+      }
     }
   }
   .theme-content {
     flex-grow: 1;
     display: flex;
+    flex-direction: column;
+    
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
     @media screen and (min-width: 1400px) {
       padding-top: 100px;
     }
@@ -194,8 +214,11 @@
   .theme-content-box{
     width: 100%;
     max-width: 440px;
-    padding-left: 60px;
-    padding-right: 60px;
+
+    @media screen and (min-width: 768px) {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
 
     h3 {
       font-size: 20px;

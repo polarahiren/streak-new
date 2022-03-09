@@ -406,7 +406,8 @@ main.main-section .right-section {
     padding-left: 35px;
   }
 }
-.hero-section .hero-banner-content a.hero-cta {
+
+a.hero-cta {
   margin-top: 32px;
   text-transform: capitalize;
   display: inline-block;
@@ -440,6 +441,9 @@ main.main-section .right-section {
   top: 0px;
   left: 0px;
 }
+.theme-slides .text-title {
+  text-transform: capitalize;
+}
 
 .section-two {
   z-index: 10;
@@ -465,28 +469,51 @@ main.main-section .right-section {
 .theme-slide-content-box {
   position: absolute;
   z-index: 9;
-  bottom: 20%;
+  bottom: 15%;
   width: 80%;
   left: 0;
   right: 0;
   margin: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   min-height: 35%;
+  padding-left: 30px;
+}
+@media screen and (min-width: 768px) {
+  .theme-slide-content-box {
+    bottom: 20%;
+    flex-direction: row;
+    padding-left: 0px;
+  }
 }
 .theme-slide-content-box .theme-slide-title {
-  min-width: 300px;
   flex-shrink: 0;
-  text-align: right;
+}
+@media screen and (min-width: 768px) {
+  .theme-slide-content-box .theme-slide-title {
+    text-align: right;
+    min-width: 300px;
+  }
 }
 @media screen and (min-width: 990px) {
   .theme-slide-content-box .theme-slide-title {
     padding-right: 30px;
   }
 }
+@media screen and (max-width: 767px) {
+  .theme-slide-content-box .theme-slide-title .text-title {
+    margin-bottom: 40px;
+  }
+}
 .theme-slide-content-box .theme-content {
   flex-grow: 1;
   display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .theme-slide-content-box .theme-content {
+    flex-direction: row;
+  }
 }
 @media screen and (min-width: 1400px) {
   .theme-slide-content-box .theme-content {
@@ -501,8 +528,12 @@ main.main-section .right-section {
 .theme-slide-content-box .theme-content-box {
   width: 100%;
   max-width: 440px;
-  padding-left: 60px;
-  padding-right: 60px;
+}
+@media screen and (min-width: 768px) {
+  .theme-slide-content-box .theme-content-box {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 .theme-slide-content-box .theme-content-box h3 {
   font-size: 20px;
