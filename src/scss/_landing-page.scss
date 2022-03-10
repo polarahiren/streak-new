@@ -61,8 +61,9 @@ main.main-section {
     border-right: 1px solid rgb(255 255 255 / 8%);
     
     @media screen and (max-width: 767px) {
-      height: 500px;
+      height: auto;
       padding: 0px;
+      align-items: flex-end;
     }
 
     h1 {
@@ -74,7 +75,7 @@ main.main-section {
       letter-spacing: -0.90px;
       
       @media screen and (max-width: 767px) {
-        padding: 100px 20px 0px;
+        padding: 150px 20px 50px;
         font-size: 30px;
       }
     }
@@ -82,7 +83,7 @@ main.main-section {
 
   .right-section {
     @media screen and (max-width: 767px) {
-      height: 80vh;
+      height: 60vh;
       padding: 0px;
     }
     .landing-card {
@@ -94,6 +95,7 @@ main.main-section {
       padding: 0px 5% 5% 5%;
       font-weight: 300;
       position: relative;
+      overflow: hidden;
 
       &:not(:first-child) {
         border-top: 1px solid rgb(255 255 255 / 8%);
@@ -131,11 +133,16 @@ main.main-section {
         z-index: -1;
         margin: 0 auto;
         display: block;
-        transition: 0.2s all ease-in-out;
+        transition: 0.3s all ease-in-out;
+
+        @media screen and (max-width: 767px) {
+          opacity: 0.8;
+        }
       }
 
       &:hover img{
         filter: grayscale(0.8);
+        transform: scale(1.05);
       }
 
       h3 {
@@ -167,10 +174,12 @@ main.main-section {
 
   @media screen and (max-width: 767px){
     flex-direction: column;
+    min-height: 100vh;
 
     .left-section,
     .right-section{
       width: 100%;
+      flex-grow: 1;
     }
   }
 }

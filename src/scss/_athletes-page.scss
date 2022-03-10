@@ -132,6 +132,7 @@ a.hero-cta {
   height: 100vh;
   top: 0px;
   left: 0px;
+  overflow-x: hidden;
 
   .text-title{
     text-transform: capitalize;
@@ -209,12 +210,11 @@ a.hero-cta {
   }
   .theme-content {
     flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
+    width: 100%;
     
     @media screen and (min-width: 768px) {
       flex-direction: row;
+      width: 20%;
     }
     @media screen and (min-width: 1400px) {
       padding-top: 100px;
@@ -260,4 +260,41 @@ a.hero-cta {
     .bg-cloud:before{
       opacity: 0.6;
     }
+}
+
+
+.livestrem-slider{
+  @media screen and (min-width: 991px) {
+    .slick-slide{
+      max-width: 450px;
+
+      & + .slick-slide{
+        border-left: 1px solid #ffffff10;
+      }
+    }
+    .slick-track{
+      display: flex;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .slick-arrow{
+      width: 60px;
+      top: auto;
+      bottom: -45px;
+
+      &.slick-prev{
+        left:0px;
+        display: none !important;
+      }
+      &.slick-next{
+        right:0px;
+      }
+
+      &::before{
+        display: none;
+      }
+
+    }
+  }
 }
