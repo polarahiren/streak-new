@@ -192,13 +192,13 @@ a.hero-cta {
     flex-shrink: 0;
     @media (min-width: 768px) and (max-width: 1299px) {
       text-align: right;
-      min-width: 200px;
+      width: 200px;
     }
     @media screen and (min-width: 1300px) {
       text-align: right;
-      min-width: 300px;
+      width: 300px;
     }
-    @media screen and (min-width: 990px) {
+    @media screen and (min-width: 768px) {
         padding-right: 30px;
     }
     @media screen and (max-width: 767px) {
@@ -211,6 +211,7 @@ a.hero-cta {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    max-width: 100%;
     
     @media screen and (min-width: 768px) {
       flex-direction: row;
