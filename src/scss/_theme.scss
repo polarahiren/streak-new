@@ -1,5 +1,9 @@
 
 // global css
+html{
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -34,6 +38,9 @@ img {
 .w-full {
   width: 100%;
 }
+.h-full{
+  height: 100%;
+}
 
 .bg-black {
   background-color: $black;
@@ -51,6 +58,10 @@ img {
   text-align: center;
 }
 
+.hidden{
+  display: none;
+}
+
 .flex {
   display: flex;
 }
@@ -63,6 +74,15 @@ img {
   position: relative;
 }
 
+.text-sm{
+  font-size: 13px;
+}
+.text-md{
+  font-size: 17px;
+}
+.text-4xl{
+  font-size: 40px;
+}
 // END global css
 
 
@@ -86,13 +106,13 @@ header {
 }
 
 .text-title {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 300;
   line-height: 1.35;
   letter-spacing: -0.55px;
   margin: 0;
   @media screen and (max-width: 767px){
-    font-size: 32px;
+    font-size: 28px;
   }
 }
 
