@@ -105,6 +105,18 @@ header {
   justify-content: space-between;
 }
 
+.text-4xl {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1.35;
+  letter-spacing: -0.90px;
+  margin-top: 0;
+  margin-bottom: 0;
+  @media screen and (max-width: 767px){
+    font-size: 32 px;
+  }
+}
+
 .text-title {
   font-size: 32px;
   font-weight: 300;
@@ -134,4 +146,29 @@ header {
 
 .max-w-sm{
   max-width: 440px;
+}
+.mb-8{
+  margin-bottom: 32px;
+}
+
+
+.scroll-bar-none{
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  /* Track */
+  &::-webkit-scrollbar-track {
+  }
+   
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: transparent; 
+  }
+  
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: transparent; 
+  }
+
 }
