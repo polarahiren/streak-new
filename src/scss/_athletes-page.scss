@@ -111,9 +111,9 @@
         width: 360px;
       }
 
-      @media screen and (min-width: 991px) {
-        width: 500px;
-      }
+      // @media screen and (min-width: 991px) {
+      //   width: 500px;
+      // }
     }
 
     .hero-content {
@@ -135,7 +135,7 @@
 .athletes-hero-section{
   .hero-banner-content{
     .hero-title{
-      max-width: 400px;
+      max-width: 300px;
       @media screen and (min-width: 990px) {
         margin-left: 100px;
       }
@@ -147,11 +147,6 @@
   }
 }
 
-a.hero-cta {
-  text-transform: capitalize;
-  display: inline-block;
-  font-size: 13px;
-}
 
 
 .bg-left-cloud {
@@ -176,139 +171,6 @@ a.hero-cta {
 }
 
 
-.theme-slides {
-  background: #000;
-  position: sticky;
-  height: 100vh;
-  top: 0px;
-  left: 0px;
-  overflow-x: hidden;
-
-  .text-title{
-    text-transform: capitalize;
-  }
-}
-
-.section-two {
-  z-index: 10;
-}
-.section-three{
-  z-index: 20;
-}
-.section-four{
-  z-index: 40;
-}
-.section-five{
-  z-index: 50;
-}
-
-
-.section-two,
-.section-four,
-.section-five {
-  .section-wall-image {
-    height: 100%;
-    object-fit: cover;
-    margin: 0 0 0 auto;
-    display: block;
-  }
-}
-
-
-// theme slides css
-.theme-slide-content-box {
-  position: absolute;
-  z-index: 9;
-  bottom: 15%;
-  width: 80%;
-  left: 0;
-  right: 0;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  min-height: 35%;
-  padding-left: 30px;
-
-  @media (min-width: 768px) and (max-width: 1299px) {
-    width: 90%;
-  }
-
-  @media screen and (min-width: 768px) {
-    bottom: 20%;
-    flex-direction: row;
-    padding-left: 0px;
-  }
-
-  .theme-slide-title {
-    flex-shrink: 0;
-    @media (min-width: 768px) and (max-width: 1299px) {
-      text-align: right;
-      width: 200px;
-    }
-    @media screen and (min-width: 1300px) {
-      text-align: right;
-      width: 300px;
-    }
-    @media screen and (min-width: 768px) {
-        padding-right: 30px;
-    }
-    @media screen and (max-width: 767px) {
-      .text-title{
-        margin-bottom: 40px;
-      }
-    }
-  }
-  .theme-content {
-    flex-grow: 1;
-    width: 100%;
-    
-    @media screen and (min-width: 768px) {
-      flex-direction: row;
-      width: 20%;
-    }
-    @media screen and (min-width: 1400px) {
-      padding-top: 100px;
-    }
-    @media screen and (min-width: 991x) {
-      padding-right: 70px;
-    }
-  }
-
-  .theme-content-box{
-    width: 100%;
-    max-width: 360px;
-
-    @media (min-width: 768px) and (max-width: 1023px) {
-      margin-left: 40px;
-      margin-right: 40px;
-    }
-
-    @media screen and (min-width: 1023px) {
-      margin-left: 60px;
-      margin-right: 60px;
-    }
-
-    h3 {
-      font-size: 17px;
-      font-weight: 300;
-      margin-bottom: 16px;
-      letter-spacing: 0.21px;
-      line-height: 1.6;
-      color: #ffffff;
-    }
-    p{
-      font-size: 13px;
-      color: rgb(212 210 207 / 90%);
-      font-weight: 300;
-      letter-spacing: 0.34px;
-    }
-    
-    .hero-cta{
-      margin-top: 20px;
-      text-shadow: 0 1px 2px #ffffff15;
-    }
-  } 
-}
 
 .athletes-page{
   .theme-content-box:not(:first-child){
@@ -380,7 +242,6 @@ a.hero-cta {
   }
 
   .theme-slide-content-box{
-    bottom: 15%;
     @media screen and (max-width: 767px) {
       position: static;
       padding-bottom: 40px;
