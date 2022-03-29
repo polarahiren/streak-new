@@ -178,6 +178,7 @@ header {
   text-transform: capitalize;
   display: inline-block;
   font-size: 13px;
+  font-weight: 300;
 }
 
 
@@ -323,7 +324,7 @@ header {
 
 .common-slide{
   @media screen and (max-width: 767px) {
-    margin-bottom: -120px;
+    padding-bottom: 40px;
   }
 
   .theme-slide-content-box{
@@ -331,7 +332,6 @@ header {
       position: static;
       padding-bottom: 40px;
       padding-left: 30px;
-      transform: translateY(-120px);
     }
   }
 
@@ -345,7 +345,7 @@ header {
 
     @media screen and (max-width: 767px) {
       width: 90%;
-      margin-bottom: 30px;
+      margin-bottom: -120px;
       height: 70vh;
     }
     @media (min-width: 768px) and (max-width: 1400px) {
@@ -400,3 +400,20 @@ header {
 
 }
 // END scroll to bottom 
+
+
+
+.hero-section{
+  .hero-banner-content{
+    .hero-title{
+      max-width: 300px;
+      @media screen and (min-width: 990px) {
+        margin-left: 100px;
+      }
+
+      h2{
+        margin-bottom: 64px;
+      }
+    }
+  }
+}

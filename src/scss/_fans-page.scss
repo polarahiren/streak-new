@@ -1,7 +1,25 @@
 .fans-page {
-    .hero-section .section-wall-image{
-        width: 100%;
+    .hero-section{
+        .section-wall-image{
+            width: 100%;
+        }
+
+        .hero-title{
+            max-width: 360px;
+        }
+
+        .hero-cta{
+            margin-top: 50px;
+        }
     }
+
+    .common-slide{
+        // margin-bottom: 00px;
+        height: 100%;
+        min-height: 100vh;
+    }
+
+    /* old page css
     .section-two {
         .bg-left-cloud:before {
             background-image: url("../images/left-cloud-full.png");
@@ -74,4 +92,6 @@
             width: 100%;
         }
     }
+
+    END old page css */
 }
