@@ -181,6 +181,147 @@ header {
   font-weight: 300;
 }
 
+// menu modal css
+.menu{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 99;
+  background-color: rgb(0 0 0 / 85%);
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(25px);
+
+  > div.flex {
+    flex-direction: column;
+    padding: 150px 15px;
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  ul.nav-list {
+    // flex-grow: 1;
+    display: flex;
+    overflow-x: auto;
+
+    @media screen and (min-width:768px) {
+      align-items: center;
+    }
+
+    @media screen and (max-width:767px) {
+      flex-direction: column;
+    }
+
+
+    li{
+      display: block;
+      flex-shrink: 0;
+    
+      @media screen and (min-width:768px) {  
+        &:nth-child(-n+5){
+          margin-right: 80px;
+        }
+
+        &:last-child{
+          display: none;
+        }
+      }
+
+      @media screen and (max-width:767px) {
+        margin-bottom: 25px;
+      }
+
+      .nav-list-item{
+        font-size: 32px;
+        color: #91908E;
+        letter-spacing: -0.21px;
+        line-height: 36px;
+        font-weight: 300;
+        text-transform: capitalize;
+        transition: 0.3s all ease-in-out;
+        padding: 15px 0px;
+        border-bottom: 1px solid transparent;
+        display: block;
+
+        &:hover{
+          color: #ffffff;
+          border-bottom: 1px solid #ffffff;
+        }
+
+        &.active{
+          color: #D4D2CF;
+        }
+
+        @media (min-width:768px) and (max-width:1200px) {
+          font-size: 28px;
+        }
+
+        @media screen and (max-width:767px) {
+          font-size: 20px;
+          line-height: 24px;
+          padding: 6px 0px;
+          display: inline-block;
+        }
+
+      }
+    }
+  }
+
+  .bottom-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    ul.social-menu {
+      display: flex;
+      order: 2;
+      align-items: center;
+
+      li {
+        display: block;
+        margin-left: 26px;
+      }
+    }
+    ul.external-links {
+      display: flex;
+      li {
+        margin-right: 20px;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: #B5B3B1;
+
+        a{
+          color: #B5B3B1;
+          transition: 0.3s all ease-in-out;
+          display: block;
+          border-bottom: 1px solid transparent;
+          padding: 2px 0px;
+
+          &:hover{
+            color: #ffffff;
+            border-bottom: 1px solid;
+          }
+        }
+
+        &.copyright{
+          color: #91908E;
+          font-weight: 300;
+          flex-shrink: 0;
+          padding: 2px 0px;
+        }
+      }
+    }
+  }
+}
+
+// menu modal css
+
+
+
 
 ul.right-menu {
   font-size: 12px;
