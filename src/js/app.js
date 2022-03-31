@@ -8,6 +8,21 @@ try {
 require('slick-carousel/slick/slick');
 
 jquery(document).ready(function () {
+    // navbar menu open
+    $(".menu-drawer").click(function () {
+        $(this).addClass("open");
+        $(".menu").addClass("show");
+        $("body").addClass("bg-fixed");
+    });
+    
+    $(".close-menu").click(function () {
+        $(this).removeClass("open");
+        $(".menu").removeClass("show");
+        $("body").removeClass("bg-fixed");
+    });
+    // navbar menu open
+
+
     jquery('.livestrem-slider').slick({
         dots: false,
         speed: 300,
