@@ -88,7 +88,7 @@
           position: absolute;
           left: 0;
           top: 0;
-          z-index: 0;
+          z-index: 1;
           opacity: 0.6;
         }
 
@@ -100,7 +100,7 @@
           position: absolute;
           left: -1px;
           bottom: 8%;
-          z-index: 0;
+          z-index: 1;
           opacity: 0;
           transition: 0.4s all ease-in-out;
         }
@@ -122,7 +122,7 @@
           -o-object-position: bottom center;
           object-position: bottom center;
           opacity: 0.6;
-          z-index: -1;
+          z-index: 0;
           margin: 0 auto;
           display: block;
           transition: 0.3s all ease-in-out;
