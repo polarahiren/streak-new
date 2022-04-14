@@ -89,6 +89,9 @@ img {
 .font-light{
   font-weight: 300;
 }
+.mt-10{
+  margin-top: 40px;
+}
 // END global css
 
 
@@ -644,7 +647,7 @@ ul.right-menu {
 
 // scroll to bottom 
 .scroll-to-bottom {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 5%;
   display: block;

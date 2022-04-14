@@ -372,6 +372,10 @@ img {
   font-weight: 300;
 }
 
+.mt-10 {
+  margin-top: 40px;
+}
+
 body {
   font-family: "Graphik", sans-serif;
   margin: 0px;
@@ -909,7 +913,7 @@ ul.right-menu li a:hover {
 }
 
 .scroll-to-bottom {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 5%;
   display: block;
