@@ -83,5 +83,17 @@
             }
         }
     }
+
+    .slide-bg-img{
+        height: 100%;
+        display: block;
+        margin-right: 0;
+        margin-left: auto;
+        object-fit: cover;
+    }
+
+    .hero-cta{
+        margin-top: 20px;
+    }
 }
 // END athletes page
