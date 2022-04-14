@@ -920,8 +920,46 @@ ul.right-menu {
 
   .policy-footer {
     margin-top: 50px;
+    text-align: center;
+
     img{
       margin: 15px 0;
+    }
+  }
+
+  &.terms-page{
+    > ul{
+      margin-bottom: 20px;
+     > li{
+        list-style: decimal;
+        margin-bottom: 30px;
+        
+        > span{
+          font-weight: 600;
+          margin-bottom: 7px;
+          display: block;
+        }
+
+        ul{
+          margin-bottom: 20px;
+        }
+      }
+
+       ul{
+        li{
+          margin-bottom: 10px;
+          list-style-type: circle;
+           
+          span{
+            margin-bottom: 7px;
+            display: block;
+          }
+        }
+
+        ul li{
+          list-style-type: square;
+        }
+      }
     }
   }
 }
