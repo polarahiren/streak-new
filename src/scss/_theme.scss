@@ -138,10 +138,8 @@ header {
 }
 
 .text-base{
-  font-size: 13px;
-  letter-spacing: 0.55px;
-  line-height: 24px;
-  color: #D4D2CF;
+  font-size: 15px !important;
+  line-height: 24px !important;
 }
 
 .theme-text {
@@ -295,10 +293,6 @@ body.bg-fixed{
       @media screen and (min-width:768px) {  
         &:nth-child(-n+5){
           margin-right: 80px;
-        }
-
-        &:last-child{
-          display: none;
         }
       }
 
