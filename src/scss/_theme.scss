@@ -855,3 +855,74 @@ ul.right-menu {
 
   }
 }
+
+
+// policy page css
+.terms-policy-section {
+  padding: 150px 20px;
+  width: 85%;
+  max-width: 1024px;
+  margin: 0 auto;
+  font-weight: 300;
+  line-height: 28px;
+  font-size: 15px;
+  letter-spacing: 0.55px;
+  color: #D4D2CF;
+
+  @media screen and (max-width: 767px) {
+    line-height: 24px;
+    font-size: 13px; 
+  }
+
+  h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    font-weight: 300;
+    line-height: 1.6;
+
+    @media screen and (max-width: 767px) {
+      font-size: 32px;
+    }
+  }
+
+  h5{
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    letter-spacing: 0.55px;
+
+    span{
+      font-weight: 300;
+      margin-bottom: -15px;
+      display: block;
+    }
+  }
+
+  h6{
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 0.89px;
+  }
+
+  p{
+    margin-bottom: 20px;
+  }
+
+  ul {
+    padding-left: 25px;
+    margin-bottom: 40px;
+    li{
+      list-style: disc;
+    }
+  }
+
+  .policy-footer {
+    margin-top: 50px;
+    img{
+      margin: 15px 0;
+    }
+  }
+}
+// END policy page css
