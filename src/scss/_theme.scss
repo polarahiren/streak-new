@@ -145,12 +145,11 @@ header {
 }
 
 .theme-text {
-  font-size: 13px;
-  line-height: 1.9;
+  font-size: 15px;
+  line-height: 24px;
   letter-spacing: 0.55px;
   margin: 0px;
   font-weight: 300;
-  color: #B5B3B1;
 }
 
 .max-w-sm{
@@ -645,7 +644,7 @@ ul.right-menu {
 
 
 
-// scroll to bottom 
+ // scroll to bottom 
 .scroll-to-bottom {
   position: fixed;
   bottom: 0;
@@ -664,6 +663,7 @@ ul.right-menu {
 
   @media screen and (max-width: 767px) {
     bottom: 0%;
+    left: 3%;
   }
   
 
@@ -699,5 +699,73 @@ ul.right-menu {
         margin-bottom: 64px;
       }
     }
+  }
+}
+
+
+//new theme
+.btn-white{
+  padding: 12px 24px;
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 30px;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.55px;
+  transition: 0.4s all ease-in-out;
+  text-transform: capitalize;
+  min-width: 176px;
+  text-align: center;
+  display: inline-block;
+
+  &:hover{
+    background: #000000;
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+}
+
+.btn-text{
+  padding: 12px 15px;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.55px;
+  text-transform: capitalize;
+}
+
+
+.theme-slide{
+  .slide-box{
+      @media screen and (min-width: 990px){
+          .max-w-sm{
+              margin-left: 100px;
+          }
+      }
+  }
+
+  .slide-bg-img{
+      height: 100%;
+      display: block;
+      margin-right: 0;
+      margin-left: auto;
+      object-fit: cover;
+
+      @media screen and (max-width: 767px){
+          width: 100%;
+      }
+  }
+
+  .hero-cta{
+      margin-top: 20px;
+  }
+
+  .form-slide{
+      @media screen and (min-width: 768px){
+          .mt-10{
+              margin-top: 80px;
+          }
+      }
   }
 }
