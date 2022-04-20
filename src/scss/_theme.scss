@@ -979,3 +979,88 @@ ul.right-menu {
   }
 }
 // END policy page css
+
+
+
+// footer css
+.footer-container{
+  width: 90%;
+  margin: 0 auto;
+  padding: 100px 0px 80px;
+
+  @media screen and (max-width:767px) {
+    padding: 70px 0px 50px;
+  }
+
+  > .flex{
+    justify-content: space-between;
+
+    @media screen and (max-width:767px) {
+      flex-direction: column;  
+    }
+  }
+}
+
+.footer-copyright{
+  margin-top: 100px;
+  @media screen and (max-width:767px) {
+    margin-top: 40px;
+  }
+  
+  p{
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.89px; 
+    color: #D4D2CF;
+    text-transform: capitalize;
+  }
+
+  span{
+    display: block;
+    margin-bottom: 4px;
+  }
+}
+
+.footer-menu{
+  @media screen and (max-width:767px) {
+    margin-top: 60px;
+  }
+
+   ul{
+    @media screen and (max-width:767px) {
+      width: 50%;
+    }
+    @media screen and (min-width:768px) {
+        min-width: 250px;
+    }
+
+     & + ul{
+       margin-left: 40px;
+     }
+
+      li{
+        margin-bottom: 32px;
+        @media screen and (max-width:767px) {
+          margin-bottom: 24px;
+        }
+
+        a{
+          display: inline-block;
+          padding: 3px 0px;
+          font-size: 13px;
+          line-height: 20px;
+          letter-spacing: 0.89px;
+          color: #ffffff;
+          border-bottom: 2px solid transparent;
+          transition: 0.4s all ease-in-out;
+          font-weight: 400;
+
+          &:hover{
+            border-color: #ffffff;
+          }
+        }
+      }
+   }
+
+}
+// END footer css
