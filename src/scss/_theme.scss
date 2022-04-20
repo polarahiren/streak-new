@@ -199,6 +199,14 @@ header {
   display: inline-block;
   font-size: 13px;
   font-weight: 300;
+  border-bottom: 2px solid transparent;
+  transition: 0.4s all ease-in-out;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
+  &:hover{
+    border-bottom: 2px solid #ffffff;
+  }
 }
 
 .hero-cta-rounded {
@@ -854,6 +862,10 @@ ul.right-menu {
     }
 
   }
+}
+
+.hero-slide-full-img .slide-bg-img{
+  width: 100%;
 }
 
 

@@ -3,6 +3,11 @@
         margin-top: 40px;
         .btn-text{
             margin-left: 20px;
+            transition: 0.4s all ease-in-out;
+
+            &:hover{
+                text-decoration: underline;
+            }
 
             @media screen and (max-width:767px){
                 font-size: 13px;
@@ -12,12 +17,18 @@
     }
 
     .list-group-number{
-        margin: 20px 0px 0px;
+        margin: 20px 0px 20px;
         padding-left: 20px;
         color: #D4D2CF;
 
         li{
             list-style: decimal;
         }
+    }
+
+    .hero-cta{
+        letter-spacing: 0.55px;
+        margin-top: 40px;
+        font-weight: 400;
     }
 }
