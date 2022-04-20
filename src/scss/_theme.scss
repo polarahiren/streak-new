@@ -343,6 +343,7 @@ body.bg-fixed {
 
         &.active {
           color: #D4D2CF;
+          border-color: #D4D2CF;
         }
 
         @media (min-width:768px) and (max-width:1200px) {
@@ -421,7 +422,8 @@ body.bg-fixed {
           border-bottom: 1px solid transparent;
           padding: 2px 0px;
 
-          &:hover {
+          &:hover,
+          &.active {
             color: #ffffff;
             border-bottom: 1px solid;
 
