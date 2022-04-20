@@ -117,6 +117,13 @@
 }
 
 .form-slide{
+    a{
+        transition: 0.4s all ease-in-out;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
     @media screen and (max-width: 991px){
         overflow-y: auto;
         height: 1200px;
