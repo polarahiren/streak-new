@@ -103,6 +103,10 @@ img {
   margin-top: 40px;
 }
 
+.hover-underline:hover{
+  text-decoration: underline;
+}
+
 // END global css
 
 
@@ -119,7 +123,7 @@ header {
   left: 0;
   right: 0;
   width: 90%;
-  z-index: 99;
+  z-index: 999;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -193,6 +197,12 @@ header {
 
 }
 
+
+.hero-slide{
+  position: relative;
+  z-index: 99;
+  background-color: #000000;  
+}
 
 .hero-cta {
   text-transform: capitalize;
