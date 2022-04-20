@@ -984,12 +984,15 @@ ul.right-menu {
 
 // footer css
 .footer-container{
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
-  padding: 100px 0px 80px;
+  padding: 100px 5% 80px;
+  position: relative;
+  z-index: 99;
+  background: #000;
 
   @media screen and (max-width:767px) {
-    padding: 70px 0px 50px;
+    padding: 70px 5% 50px;
   }
 
   > .flex{
@@ -1030,8 +1033,11 @@ ul.right-menu {
     @media screen and (max-width:767px) {
       width: 50%;
     }
-    @media screen and (min-width:768px) {
-        min-width: 250px;
+    @media (min-width:768px) and (max-width:1024px) {
+      min-width: 150px;
+    }
+    @media screen and (min-width:1025px) {
+      min-width: 250px;
     }
 
      & + ul{
@@ -1055,7 +1061,8 @@ ul.right-menu {
           transition: 0.4s all ease-in-out;
           font-weight: 400;
 
-          &:hover{
+          &:hover,
+          &.active{
             border-color: #ffffff;
           }
         }
