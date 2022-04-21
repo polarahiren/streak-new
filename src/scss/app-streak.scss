@@ -117,7 +117,7 @@
 }
 
 .form-slide{
-    a{
+    p > a{
         transition: 0.4s all ease-in-out;
         &:hover{
             text-decoration: underline;
@@ -136,24 +136,6 @@
     }
 }
 
-.access-form{
-    width: 100%;
-    max-width: 550px;
-    height: 500px;
-    border-radius: 10px;
-    border: 1px solid #212120;
-
-    @media screen and (max-width: 991px){
-        margin-left: 30px;
-        max-width: calc(100% - 30px);
-        margin-top: 20px;
-    }
-
-    @media screen and (min-width: 992px){
-        flex-grow: 1;
-        margin: 0 auto;
-    }
-}
 // END athletes page
 
 .cta-mobile{
