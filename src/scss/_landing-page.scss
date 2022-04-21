@@ -247,3 +247,85 @@
 
   }
 }
+
+
+// download page css
+.download-section{
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  .flex{
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+
+    @media screen and (max-width:767px) {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .app-button{
+      flex-shrink: 0;
+      text-align: center;
+      padding: 20px;
+
+      @media screen and (min-width:768px) {
+        min-width: 300px;
+      }
+
+      .download-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        max-width: 200px;
+        margin: 0 auto 50px;
+        
+        @media screen and (max-width:767px) {
+          height: 150px;
+          margin: 0 auto 20px;
+        }
+
+        svg{
+          color: #212120;
+          transition: 0.4s all ease-in-out;
+
+          @media screen and (max-width:767px) {
+            width: 120px;
+            height: 120px;
+          }
+          
+        }
+
+        &:hover svg{
+          color: #ffffff;
+        }
+      }
+      a{
+        display: inline-block;
+      }
+
+      &:hover .download-icon svg{
+        color: #ffffff;
+      } 
+
+    }
+
+
+    .gray-divider{
+      height: 300px;
+      width: 1px;
+      background-color: #91908E50;
+      display: block;
+      box-shadow: 0px 0px 12px 0px #CFCFCF;
+
+      @media screen and (max-width:767px) {
+        height: 1px;
+        width: 100%;
+        max-width: 250px;
+        margin: 20px 0px;
+      }
+    }
+  }
+}
