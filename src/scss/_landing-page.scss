@@ -329,3 +329,15 @@
     }
   }
 }
+
+.home-page{
+  @media screen and (max-width: 767px){
+    .theme-slide .slide-bg-img{
+      object-position: 70% 50%;
+    }
+    .hero-slide .slide-bg-img{
+      display: block !important;
+      object-position: 35% 50%;
+    }
+  }
+}
