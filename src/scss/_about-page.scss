@@ -1,5 +1,13 @@
 .about-page {
-    
+    .hero-slide .slide-bg-img{
+        margin-right: 0px !important;
+    }
+
+    .theme-slide .slide-bg-img{
+        @media screen and (max-width:767px) {
+            display: none !important;
+        }
+    }
 }
 
 .investors-slide,
