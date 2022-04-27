@@ -7,7 +7,15 @@ try {
 // slick js
 require('slick-carousel/slick/slick');
 
-jquery(document).ready(function () {
+// AOS js
+import AOS from 'aos';
+
+jQuery(document).ready(function () {
+    AOS.init();
+});
+
+
+jQuery(document).ready(function () {
     // navbar menu open
     $(".menu-drawer").click(function () {
         $(this).addClass("open");
@@ -78,3 +86,4 @@ jquery(document).ready(function () {
         ]
     });
 });
+
