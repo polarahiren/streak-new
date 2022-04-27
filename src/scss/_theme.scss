@@ -722,6 +722,13 @@ ul.right-menu {
 
 }
 
+.scroll-hide{
+  .scroll-to-bottom {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+
 // END scroll to bottom 
 
 

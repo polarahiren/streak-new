@@ -87,3 +87,12 @@ jQuery(document).ready(function () {
     });
 });
 
+
+//header
+$(window).scroll(function(){
+    var sticky = $('body'),
+        scroll = $(window).scrollTop();
+
+    if (scroll >= 800) sticky.addClass('scroll-hide');
+    else sticky.removeClass('scroll-hide');
+});
