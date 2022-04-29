@@ -1001,9 +1001,19 @@ ul.right-menu {
   position: relative;
   z-index: 99;
   background: #000;
+  display: flex;
 
   @media screen and (max-width:767px) {
-    padding: 70px 5% 50px;
+    padding: 70px 5% 50px; 
+    align-items: end;
+  }
+
+  @media screen and (min-width:768px) {
+    align-items: end;
+
+    & > .flex{
+      align-items: start;
+    }
   }
 
   > .flex{

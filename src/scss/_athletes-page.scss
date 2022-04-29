@@ -22,6 +22,15 @@
   &.about-page{
     background-image: url("../images/about-us/about-us-bg.png");
   }
+
+  @media screen and (max-width: 767px) {
+    &.home-page{
+      background-position: center right 40%;
+    }
+    &.about-page{
+      background-position: center right -200px;
+    }
+  }
 }
 
 
