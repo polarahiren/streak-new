@@ -18,11 +18,18 @@
 
     .list-group-number{
         margin: 20px 0px 20px;
-        padding-left: 20px;
         color: #D4D2CF;
+        font-size: 13px;
+
 
         li{
-            list-style: decimal;
+            padding-left: 30px;
+            background-image: url(../images/icons/diamond.svg);
+            background-repeat: no-repeat;
+            background-position: left top 3px;
+            background-size: 20px;
+            line-height: 28px;
+            font-style: italic;
         }
     }
 
@@ -30,5 +37,13 @@
         letter-spacing: 0.55px;
         margin-top: 40px;
         font-weight: 400;
+    }
+}
+
+.grid-cols-2{
+    display: grid;
+    
+    @media screen and (min-width:767px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));    
     }
 }
